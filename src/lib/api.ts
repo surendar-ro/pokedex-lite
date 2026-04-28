@@ -16,9 +16,10 @@ export interface PokemonDetails {
   weight: number;
   height: number;
   sprites: {
-    other: {
-      "official-artwork": {
-        front_default: string;
+    front_default: string | null;
+    other?: {
+      "official-artwork"?: {
+        front_default: string | null;
       };
     };
   };
